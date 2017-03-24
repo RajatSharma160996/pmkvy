@@ -12,17 +12,20 @@ import com.sih.pmkvy.login.*;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
-    Button signup,centre_list,login_btn;
+    Button signup,centre_list,login_btn,set_btn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         signup=(Button)findViewById(R.id.goto_signup);
+        set_btn=(Button)findViewById(R.id.settings);
+
         centre_list=(Button)findViewById(R.id.goto_training_centre);
         login_btn=(Button)findViewById(R.id.login_main);
         login_btn.setOnClickListener(this);
         signup.setOnClickListener(this);
         centre_list.setOnClickListener(this);
+        set_btn.setOnClickListener(this);
     }
 
     @Override
@@ -30,6 +33,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Intent training = new Intent(this, traning_centre.class);
         Intent signup = new Intent(this, signup_activity_student.class);
         Intent login = new Intent(this,login_activity_student.class);
+        Intent settings = new Intent(this,settings.class);
 
         if(R.id.goto_signup==v.getId())
         {
@@ -40,7 +44,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             if (R.id.goto_training_centre == v.getId()) {
                 startActivity(training);
             } else {
-                startActivity(login);
+                if (R.id.login_main == v.getId()) {
+                    startActivity(login);
+                } else {
+                    startActivity(settings);
+                }
             }
         }
 

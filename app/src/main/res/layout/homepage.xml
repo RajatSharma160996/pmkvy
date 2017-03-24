@@ -78,7 +78,7 @@
                     >
 
                     <Button
-                        android:id="@+id/button"
+                        android:id="@+id/b1"
                         android:layout_width="170dp"
                         android:layout_height="128dp"
                         android:layout_weight="1"
@@ -91,6 +91,7 @@
                         android:background="@android:color/holo_orange_light"/>
 
                     <Button
+                        android:id="@+id/b2"
                         android:layout_width="170dp"
                         android:layout_height="match_parent"
                         android:layout_margin="5dp"
@@ -128,7 +129,7 @@
                     >
 
                     <Button
-                        android:id="@+id/button1"
+                        android:id="@+id/b3"
                         android:layout_width="match_parent"
                         android:layout_height="128dp"
                         android:layout_margin="5dp"
@@ -139,7 +140,7 @@
                         android:textStyle="bold"
                         />
                     <Button
-                        android:id="@+id/button2"
+                        android:id="@+id/b4"
                         android:layout_width="match_parent"
                         android:layout_height="128dp"
                         android:layout_margin="5dp"
@@ -172,6 +173,7 @@
 
 
                     <Button
+                        android:id="@+id/b5"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:text="News and Notices"
