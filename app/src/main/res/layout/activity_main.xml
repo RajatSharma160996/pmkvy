@@ -32,6 +32,11 @@
         android:layout_height="wrap_content"
         android:text="settings"
         android:id="@+id/settings"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CourseInfo"
+        android:id="@+id/courseinfo"/>
 </LinearLayout>
 
 

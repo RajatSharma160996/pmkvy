@@ -24,6 +24,7 @@
         <activity android:name=".login.login_activity_student" android:theme="@style/AppTheme" />
         <activity android:name=".ui.settings" android:theme="@style/AppTheme" />
         <activity android:name=".ui.homepage" android:theme="@style/AppTheme" />
+        <activity android:name=".course_info.course_info_activity" android:theme="@style/AppTheme" />
     </application>
 
 </manifest>
