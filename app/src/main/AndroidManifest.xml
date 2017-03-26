@@ -25,6 +25,10 @@
         <activity android:name=".ui.settings" android:theme="@style/AppTheme" />
         <activity android:name=".ui.homepage" android:theme="@style/AppTheme" />
         <activity android:name=".course_info.course_info_activity" android:theme="@style/AppTheme" />
+        <activity android:name=".ui.feedback" android:theme="@style/AppTheme" />
+        <activity android:name=".ui.registration_form" android:theme="@style/AppTheme" />
+
+
     </application>
 
 </manifest>

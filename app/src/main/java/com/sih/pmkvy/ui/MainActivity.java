@@ -14,7 +14,7 @@ import com.sih.pmkvy.login.*;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    Button signup, centre_list, login_btn, set_btn, course_info;
+    Button signup, centre_list, login_btn, set_btn, course_info,feedback,register_butn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +33,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         course_info = (Button) findViewById(R.id.courseinfo);
         course_info.setOnClickListener(this);
-
+        feedback = (Button) findViewById(R.id.feedback);
+        feedback.setOnClickListener(this);
+        register_butn= (Button) findViewById(R.id.Registration);
+        register_butn.setOnClickListener(this);
 
     }
 
@@ -44,6 +47,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Intent login = new Intent(this, login_activity_student.class);
         Intent settings = new Intent(this, settings.class);
         Intent course = new Intent(this, course_info_activity.class);
+        Intent Feedback = new Intent(this, feedback.class);
+        Intent register= new Intent(this, registration_form.class);
 
         if (R.id.goto_signup == v.getId()) {
             startActivity(signup);
@@ -56,8 +61,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     startActivity(login);
                 } else if (R.id.settings == v.getId()) {
                     startActivity(settings);
-                } else {
+                } else if(R.id.courseinfo==v.getId()) {
                     startActivity(course);
+                }
+                else if(R.id.feedback==v.getId())
+                {
+                    startActivity(Feedback);
+                }
+                else
+                {
+                    startActivity(register);
+                }
                 }
             }
         }
@@ -67,4 +81,4 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         //startActivity(inent);
     }
-}
+

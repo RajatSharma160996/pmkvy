@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="candidate_dob" type="id" />
+    <item name="student_category" type="id" />
+    <item name="candidate_address_street" type="id" />
+</resources>

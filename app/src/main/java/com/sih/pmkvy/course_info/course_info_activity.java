@@ -33,6 +33,7 @@ public class course_info_activity extends AppCompatActivity {
 
         InitializedData();
         InitializeAdapter();
+        rv.setHasFixedSize(true);
 
     }
     private void InitializedData()
